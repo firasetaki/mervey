@@ -40,6 +40,10 @@
   grid-area: pbody;
 }
 
+.post .keywords {
+  font-weight: 500;
+}
+
 .post .tags {
   grid-area: ptgs;
 }
