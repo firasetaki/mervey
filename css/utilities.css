@@ -1,0 +1,61 @@
+/* ==================
+    Utility classes 
+   ================== */
+
+/* Styles for buttons */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--font-lighter);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: var(--su-1x) var(--su-2x);
+}
+
+/* Styles for cards */
+
+.card {
+  display: flex;
+  gap: var(--su-2x);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--su-1x);
+}
+
+.card-header,
+.card-footer {
+  display: flex;
+  gap: var(--su-1x);
+  align-items: center;
+}
+
+/* Styles for avatars */
+
+.avatar-s {
+  width: 2rem;
+}
+
+.avatar-l {
+  width: 4rem;
+}
+
+/* Styles for icons */
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.icon-l {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon-s {
+  height: 1.75rem;
+  width: 1.75rem;
+}
