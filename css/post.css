@@ -172,6 +172,10 @@
   font-weight: 400;
 }
 
+.author-profile .summary {
+  color: var(--font-light);
+}
+
 /* Syles of related section */
 
 .related-container {
@@ -198,14 +202,6 @@
 .related h4 {
   font-size: 0.75rem;
   font-weight: 500;
-}
-
-/* =========================================================
-    Helper rules for testing and debugging - to be deleted 
-   ========================================================= */
-
-.author-profile {
-  /* outline: 4px solid green; */
 }
 
 /* ===========================
