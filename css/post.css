@@ -25,6 +25,7 @@
     'phdr phdr phdr phdr phdr phdr phdr phdr phdr phdr phdr phdr'
     'pmd pmd pmd pmd pmd pmd pmd pmd pmd pmd pmd pmd'
     '... pbody pbody pbody pbody pbody pbody pbody pwrtr pwrtr pwrtr pwrtr'
+    '... pftr pftr pftr pftr pftr pftr pftr ... ... ... ...'
     '... ptgs ptgs ptgs ptgs ptgs ptgs ptgs ... ... ... ...';
 }
 
@@ -40,8 +41,12 @@
   grid-area: pbody;
 }
 
-.post .keywords {
-  font-weight: 500;
+.post .keyword {
+  font-style: italic;
+}
+
+.post-footer {
+  grid-area: pftr;
 }
 
 .post .tags {
@@ -103,7 +108,8 @@
 
 .post-body p,
 .post-body h2,
-.post-body h3 {
+.post-body h3,
+.post-body h4 {
   margin-top: var(--su-4x);
   line-height: 2rem;
 }
@@ -123,11 +129,35 @@
   margin-top: var(--su-1x);
 }
 
-blockquote {
+.post-body blockquote {
   border-left: 4px solid var(--font-dark);
   padding-left: var(--su-2x);
   margin-top: var(--su-4x);
   margin-bottom: var(--su-4x);
+}
+
+.post-body a {
+  text-decoration: underline;
+}
+
+.post-body a:hover {
+  color: var(--primary-color);
+}
+
+/* Syles of post footer */
+
+.post-footer p {
+  font-size: 1rem;
+  color: var(--font-light);
+  margin-top: var(--su-2x);
+}
+
+.post-footer a {
+  text-decoration: underline;
+}
+
+.post-footer a:hover {
+  color: var(--primary-color);
 }
 
 /* Syles of author profile */
@@ -201,6 +231,11 @@ blockquote {
 /* Larg Screens - min-width: 1024px and max-width: 1440px*/
 
 @media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    /* This is a kind of redundancy since the same grid strucutre used trice throughout the project. I have added this rule to meet the project requirements */
+  }
+
   .post-title {
     font-size: 3rem;
   }

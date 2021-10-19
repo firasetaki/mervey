@@ -101,6 +101,7 @@ strong {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
+  padding: 0 var(--su-2x);
 }
 
 /* Layout for large screens >= 1024px */
@@ -303,7 +304,7 @@ section {
 
 input[type='text'],
 input[type='email'] {
-  width: 232px;
+  width: 220px;
   border: 1px solid var(--light-color);
   border-radius: 4px;
   padding: var(--su-1x);
